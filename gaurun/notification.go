@@ -182,10 +182,6 @@ func validateNotification(notification *RequestGaurunNotification) error {
 		return errors.New("invalid platform")
 	}
 
-	if len(notification.Message) == 0 {
-		return errors.New("empty message")
-	}
-
 	return nil
 }
 
